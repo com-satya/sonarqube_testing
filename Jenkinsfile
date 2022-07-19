@@ -40,6 +40,11 @@ stages{
 		
 			}
 		}
+	stage("Quality gate") {
+            steps {
+                waitForQualityGate abortPipelin
+				}
+			}
 	
 }
 }
