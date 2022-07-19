@@ -42,7 +42,7 @@ stages{
 		}
 	stage("Quality gate") {
             steps {
-                waitForQualityGate abortPipelin
+                waitForQualityGate abortPipeline
 				}
 			}
 	
